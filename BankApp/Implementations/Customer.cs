@@ -17,9 +17,9 @@ namespace BankApp.Implementations
 
         public Customer(IAccountData accountData)
         {
-            _accountData = accountData;
+            //_accountData = accountData;
+            _accountData = new AccountData();
         }
-        
         
         public List<AccountDetailsFormatModel> GetAllCustomerAccounts(int id, string name)
         {

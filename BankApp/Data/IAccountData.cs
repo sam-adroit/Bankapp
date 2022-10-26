@@ -1,4 +1,5 @@
 ﻿using BankApp.Models;
+using BankAppWinForm;
 
 namespace BankApp.Data
 {
@@ -11,6 +12,7 @@ namespace BankApp.Data
         AccountModel GetAccountByUserIdAndAccountNo(int id, string accountNo);
         List<string> GetAllAccountNo();
         bool UpdateAccount(string accountNo, AccountModel accountModel);
+        
 
     }
 }
