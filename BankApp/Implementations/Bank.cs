@@ -2,11 +2,7 @@
 using BankApp.Interfaces;
 using BankApp.Models;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+
 
 namespace BankApp.Implementations
 {
@@ -14,13 +10,13 @@ namespace BankApp.Implementations
     {
     
         private readonly ICustomerData _customerData;
-        private readonly ICustomer _customer;
+       
         private readonly CustomerModel customerModel;
 
-        public Bank(ICustomerData customerData, ICustomer customer)
+        public Bank(ICustomerData customerData)
         {
             _customerData = customerData;
-            _customer = customer;   
+            
         }
         public CustomerModel? Login(string email, string password)
         {
